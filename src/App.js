@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { sharedFunction } from "./ReduxSubModules/src/logic/counter";
+import "./App.css";
 
 function App() {
+  const onClickHandler = () => {
+    sharedFunction('WEB');
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => onClickHandler()}>test</button>
       </header>
     </div>
   );

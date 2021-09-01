@@ -1,0 +1,3 @@
+[submodule "src/ReduxSubModules"]
+	path = src/ReduxSubModules
+	url = https://github.com/MrMole96/ReduxSubModules
